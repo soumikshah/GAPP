@@ -1,0 +1,78 @@
+package springmvc.model;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "users")
+public class User {
+
+	@Id
+	@GeneratedValue
+	private Integer id;
+
+	private String firstname;
+
+	private String lastname;
+
+	private String email;
+
+	private String password;
+
+	private boolean enabled = true;
+
+	public User() {
+		
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getFirstName() {
+		return firstname;
+	}
+
+	public void setFirstName(String firstName) {
+		firstname = firstName;
+	}
+
+	public String getLastName() {
+		return lastname;
+	}
+
+	public void setLastName(String lastName) {
+		lastname = lastName;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public boolean isEnabled() {
+		return enabled;
+	}
+
+	public void setEnabled(boolean enabled) {
+		this.enabled = enabled;
+	}
+
+}

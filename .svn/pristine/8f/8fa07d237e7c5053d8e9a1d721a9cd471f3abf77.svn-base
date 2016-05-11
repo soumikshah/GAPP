@@ -1,0 +1,33 @@
+package springmvc.model.dao;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.testng.AbstractTransactionalTestNGSpringContextTests;
+import org.testng.annotations.Test;
+
+@Test(groups = "ApplicationDaoTest")
+@ContextConfiguration(locations = "classpath:applicationContext.xml")
+public class ApplicationDaoTest extends AbstractTransactionalTestNGSpringContextTests {
+	 @Autowired
+	    ApplicationDao ApplicationDao;
+
+	    @Test
+	    public void getApplication()
+	    {
+	    	for(int i = 0; i < ApplicationDao.getApplications().size();i++){
+	    		assert ApplicationDao.getApplications().get(i).getDepartment().getName() != null;
+	    		assert ApplicationDao.getApplications().get(i).getTerm() != null;
+	    		assert ApplicationDao.getApplications().get(i).getBasicdetails().getEmail().equalsIgnoreCase("student1@localhost.localdomain");
+	    		System.out.println(ApplicationDao.getApplications().get(i).getDepartment().getName());
+	    		System.out.println(ApplicationDao.getApplications().get(i).getTerm());
+	       		System.out.println(ApplicationDao.getApplications().get(i).getBasicdetails().getEmail()); 
+	       		//System.out.println(ApplicationDao.getApplications().get(i).getDepartment().getName());
+	    	}
+//	        assert ApplicationDao.getApplications().getDepartment().getName().equalsIgnoreCase( "Accounting" );
+	//        assert ApplicationDao.getApplications().getTerm().equalsIgnoreCase( "Fall 16" );
+	    }
+	    
+	    
+
+	   
+}

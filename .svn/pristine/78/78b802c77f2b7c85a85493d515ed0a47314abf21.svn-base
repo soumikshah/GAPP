@@ -1,0 +1,84 @@
+package springmvc.model;
+
+import java.io.Serializable;
+import java.util.Set;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "education_background")
+public class EduBackGround implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	@Id
+	@GeneratedValue
+	private long id;
+
+	
+	private Set<String> nameofdegree;
+
+	private Set<String> degreesReceived;
+
+	private Set<String> Major;
+
+	private Set<String> NameOfCollege;
+
+	private Set<Integer> TimeAttended;
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public Set<String> getNameofdegree() {
+		return nameofdegree;
+	}
+
+	public void setNameofdegree(Set<String> nameofdegree) {
+		this.nameofdegree = nameofdegree;
+	}
+
+	public Set<String> getDegreesReceived() {
+		return degreesReceived;
+	}
+
+	public void setDegreesReceived(Set<String> degreesReceived) {
+		this.degreesReceived = degreesReceived;
+	}
+
+	public Set<String> getMajor() {
+		return Major;
+	}
+
+	public void setMajor(Set<String> major) {
+		Major = major;
+	}
+
+	public Set<String> getNameOfCollege() {
+		return NameOfCollege;
+	}
+
+	public void setNameOfCollege(Set<String> nameOfCollege) {
+		NameOfCollege = nameOfCollege;
+	}
+
+	public Set<Integer> getTimeAttended() {
+		return TimeAttended;
+	}
+
+	public void setTimeAttended(Set<Integer> timeAttended) {
+		TimeAttended = timeAttended;
+	}
+
+	
+
+}

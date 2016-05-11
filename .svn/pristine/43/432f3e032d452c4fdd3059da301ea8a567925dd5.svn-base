@@ -1,0 +1,35 @@
+package springmvc.model.dao;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.testng.AbstractTransactionalTestNGSpringContextTests;
+import org.testng.annotations.Test;
+
+@Test(groups = "UserDaoTest")
+@ContextConfiguration(locations = "classpath:applicationContext.xml")
+public class UserDaoTest extends AbstractTransactionalTestNGSpringContextTests {
+
+    @Autowired
+    UserDao userDao;
+
+    @Test
+    public void getUser()
+    {
+    	int i =3;
+//    	for(int i = 0; i < userDao.getUsers().size();i++){
+    		assert userDao.getUsers().get(i).getEmail().equalsIgnoreCase("student1@localhost.localdomain");
+       		assert userDao.getUsers().get(i).getUsertype().getApplication()!= null;
+    		System.out.println(userDao.getUsers().get(i).getEmail());
+    		System.out.println(userDao.getUsers().get(3).getUsertype().getApplication());
+    		
+//    	}
+        //assert userDao.getUser( 1 ).getEmail().equalsIgnoreCase( "admin@localhost.localdomain" );
+    }
+
+    @Test
+    public void getUsers()
+    {
+        assert userDao.getUsers().size() == 5;
+    }
+
+}

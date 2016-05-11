@@ -1,0 +1,111 @@
+package springmvc.model;
+
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="applications")
+public class Application implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	@Id
+	@GeneratedValue
+	private long id;
+
+	private Department department;
+	
+	private Programs program;
+	
+	private String term;
+	
+	private BasicDetails basicdetails;
+	
+	private EduBackGround educationalbackground;
+	
+	private Scores scores;
+	
+	private AdditionalDetails additional_details;
+	
+	private UserType usertype;
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public Department getDepartment() {
+		return department;
+	}
+
+	public void setDepartment(Department department) {
+		this.department = department;
+	}
+
+	public Programs getProgram() {
+		return program;
+	}
+
+	public void setProgram(Programs program) {
+		this.program = program;
+	}
+
+	public String getTerm() {
+		return term;
+	}
+
+	public void setTerm(String term) {
+		this.term = term;
+	}
+
+	public BasicDetails getBasicdetails() {
+		return basicdetails;
+	}
+
+	public void setBasicdetails(BasicDetails basicdetails) {
+		this.basicdetails = basicdetails;
+	}
+
+	public EduBackGround getEducationalbackground() {
+		return educationalbackground;
+	}
+
+	public void setEducationalbackground(EduBackGround educationalbackground) {
+		this.educationalbackground = educationalbackground;
+	}
+
+	public Scores getScores() {
+		return scores;
+	}
+
+	public void setScores(Scores scores) {
+		this.scores = scores;
+	}
+
+	public AdditionalDetails getAdditional_details() {
+		return additional_details;
+	}
+
+	public void setAdditional_details(AdditionalDetails additional_details) {
+		this.additional_details = additional_details;
+	}
+
+	public UserType getUsertype() {
+		return usertype;
+	}
+
+	public void setUsertype(UserType usertype) {
+		this.usertype = usertype;
+	}
+	
+	
+}

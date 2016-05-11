@@ -1,0 +1,73 @@
+package springmvc.model;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "education_background")
+public class EduBackGround {
+	private String DegreeEarned;
+
+	private String degreesReceived;
+
+	@Id
+	@GeneratedValue
+	private long id;
+
+	private String Major;
+
+	private String NameOfCollege;
+
+	private int TimeAttended;
+
+	public String getDegreeEarned() {
+		return DegreeEarned;
+	}
+
+	public String getDegreesReceived() {
+		return degreesReceived;
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public String getMajor() {
+		return Major;
+	}
+
+	public String getNameOfCollege() {
+		return NameOfCollege;
+	}
+
+	public int getTimeAttended() {
+		return TimeAttended;
+	}
+
+	public void setDegreeEarned(String degreeEarned) {
+		DegreeEarned = degreeEarned;
+	}
+
+	public void setDegreesReceived(String degreesReceived) {
+		this.degreesReceived = degreesReceived;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public void setMajor(String major) {
+		Major = major;
+	}
+
+	public void setNameOfCollege(String nameOfCollege) {
+		NameOfCollege = nameOfCollege;
+	}
+
+	public void setTimeAttended(int timeAttended) {
+		TimeAttended = timeAttended;
+	}
+
+}

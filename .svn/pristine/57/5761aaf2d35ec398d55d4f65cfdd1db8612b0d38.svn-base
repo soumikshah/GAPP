@@ -1,0 +1,111 @@
+package springmvc.model;
+
+import java.io.Serializable;
+import java.util.Set;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "applications")
+public class Application implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	@Id
+	@GeneratedValue
+	private long id;
+
+	@OneToOne
+	private BasicDetails basicdetails;
+
+	@OneToOne
+	private Department department;
+
+	@OneToMany
+	private Set<EduBackGround> educationalbackground;
+
+	@OneToOne
+	private Programs program;
+
+	@OneToMany
+	private Set<Scores> scores;
+
+	private String term;
+
+	@ManyToMany
+	private Set<UserType> usertypes;
+
+	
+	public BasicDetails getBasicdetails() {
+		return basicdetails;
+	}
+
+	public Department getDepartment() {
+		return department;
+	}
+
+	public Set<EduBackGround> getEducationalbackground() {
+		return educationalbackground;
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public Programs getProgram() {
+		return program;
+	}
+
+	public Set<Scores> getScores() {
+		return scores;
+	}
+
+	public String getTerm() {
+		return term;
+	}
+
+	public Set<UserType> getUsertypes() {
+		return usertypes;
+	}
+
+	public void setBasicdetails(BasicDetails basicdetails) {
+		this.basicdetails = basicdetails;
+	}
+
+	public void setDepartment(Department department) {
+		this.department = department;
+	}
+
+	public void setEducationalbackground(Set<EduBackGround> educationalbackground) {
+		this.educationalbackground = educationalbackground;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public void setProgram(Programs program) {
+		this.program = program;
+	}
+
+	public void setScores(Set<Scores> scores) {
+		this.scores = scores;
+	}
+
+	public void setTerm(String term) {
+		this.term = term;
+	}
+
+	public void setUsertypes(Set<UserType> usertypes) {
+		this.usertypes = usertypes;
+	}
+
+}

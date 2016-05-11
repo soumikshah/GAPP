@@ -1,0 +1,22 @@
+<h2>Methods run, sorted chronologically</h2><h3>&gt;&gt; means before, &lt;&lt; means after</h3><p/><br/><em>Default suite</em><p/><small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table border="1">
+<tr><th>Time</th><th>Delta (ms)</th><th>Suite<br>configuration</th><th>Test<br>configuration</th><th>Class<br>configuration</th><th>Groups<br>configuration</th><th>Method<br>configuration</th><th>Test<br>method</th><th>Thread</th><th>Instances</th></tr>
+<tr bgcolor="899677">  <td>16/01/26 15:56:54</td>   <td>0</td> <td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;AbstractTestNGSpringContextTests.springTestContextBeforeTestClass()[pri:0, instance:springmvc.model.dao.UserDaoTest@1505cd7b]">&gt;&gt;springTestContextBeforeTestClass</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@1010345431</td>   <td></td> </tr>
+<tr bgcolor="899677">  <td>16/01/26 15:56:54</td>   <td>11</td> <td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;AbstractTestNGSpringContextTests.springTestContextPrepareTestInstance()[pri:0, instance:springmvc.model.dao.UserDaoTest@1505cd7b]">&gt;&gt;springTestContextPrepareTestInstance</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@1010345431</td>   <td></td> </tr>
+<tr bgcolor="899677">  <td>16/01/26 15:56:56</td>   <td>2611</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;AbstractTestNGSpringContextTests.springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:springmvc.model.dao.UserDaoTest@1505cd7b]">&gt;&gt;springTestContextBeforeTestMethod</td> 
+<td>&nbsp;</td>  <td>main@1010345431</td>   <td></td> </tr>
+<tr bgcolor="6b8385">  <td>16/01/26 15:56:57</td>   <td>2723</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="UserDaoTest.getUser()[pri:0, instance:springmvc.model.dao.UserDaoTest@1505cd7b]">getUser</td> 
+  <td>main@1010345431</td>   <td></td> </tr>
+<tr bgcolor="899677">  <td>16/01/26 15:56:57</td>   <td>2801</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;AbstractTestNGSpringContextTests.springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:springmvc.model.dao.UserDaoTest@1505cd7b]">&lt;&lt;springTestContextAfterTestMethod</td> 
+<td>&nbsp;</td>  <td>main@1010345431</td>   <td></td> </tr>
+<tr bgcolor="899677">  <td>16/01/26 15:56:57</td>   <td>2814</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;AbstractTestNGSpringContextTests.springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:springmvc.model.dao.UserDaoTest@1505cd7b]">&gt;&gt;springTestContextBeforeTestMethod</td> 
+<td>&nbsp;</td>  <td>main@1010345431</td>   <td></td> </tr>
+<tr bgcolor="6b8385">  <td>16/01/26 15:56:57</td>   <td>2821</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="UserDaoTest.getUsers()[pri:0, instance:springmvc.model.dao.UserDaoTest@1505cd7b]">getUsers</td> 
+  <td>main@1010345431</td>   <td></td> </tr>
+<tr bgcolor="899677">  <td>16/01/26 15:56:57</td>   <td>3001</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;AbstractTestNGSpringContextTests.springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:springmvc.model.dao.UserDaoTest@1505cd7b]">&lt;&lt;springTestContextAfterTestMethod</td> 
+<td>&nbsp;</td>  <td>main@1010345431</td>   <td></td> </tr>
+<tr bgcolor="899677">  <td>16/01/26 15:56:57</td>   <td>3005</td> <td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;AbstractTestNGSpringContextTests.springTestContextAfterTestClass()[pri:0, instance:springmvc.model.dao.UserDaoTest@1505cd7b]">&lt;&lt;springTestContextAfterTestClass</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@1010345431</td>   <td></td> </tr>
+</table>

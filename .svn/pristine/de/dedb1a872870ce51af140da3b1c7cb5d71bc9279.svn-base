@@ -1,0 +1,42 @@
+package springmvc.model;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="applications")
+public class Application {
+	@Id
+	@GeneratedValue
+	private long id;
+	
+	private String programapplied;
+	
+	private String term;
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getProgramapplied() {
+		return programapplied;
+	}
+
+	public void setProgramapplied(String programapplied) {
+		this.programapplied = programapplied;
+	}
+
+	public String getTerm() {
+		return term;
+	}
+
+	public void setTerm(String term) {
+		this.term = term;
+	}
+}

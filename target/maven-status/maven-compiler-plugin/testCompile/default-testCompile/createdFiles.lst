@@ -1,0 +1,4 @@
+springmvc\model\dao\ApplicationDaoTest.class
+springmvc\model\dao\UserTypeDaoTest.class
+springmvc\model\dao\UserDaoTest.class
+springmvc\model\dao\DepartmentDaoTest.class
